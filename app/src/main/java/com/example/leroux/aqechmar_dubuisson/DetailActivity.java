@@ -21,11 +21,5 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-
-        int actualView = getIntent().getIntExtra("actualView", -1);
-        View viewById = findViewById(actualView);
-
-        ConstraintLayout actuel = findViewById(R.id.medicDetailActivity);
-        actuel.setBackground(viewById.getBackground());
     }
 }

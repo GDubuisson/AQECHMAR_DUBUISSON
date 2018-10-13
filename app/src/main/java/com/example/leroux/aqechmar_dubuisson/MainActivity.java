@@ -18,23 +18,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init_layout() {
-
-
-        ConstraintLayout medoc1 = findViewById(R.id.constraintLayout1);
-        ConstraintLayout medoc2 = findViewById(R.id.constraintLayout2);
-        ConstraintLayout medoc3 = findViewById(R.id.constraintLayout3);
-        ConstraintLayout medoc4 = findViewById(R.id.constraintLayout4);
-        ConstraintLayout medoc5 = findViewById(R.id.constraintLayout5);
-        ConstraintLayout medoc6 = findViewById(R.id.constraintLayout6);
-        ConstraintLayout medoc7 = findViewById(R.id.constraintLayout7);
-
-        medoc1.setBackground(getDrawable(MEDIC1.drawable));
-        medoc2.setBackground(getDrawable(MEDIC2.drawable));
-        medoc3.setBackground(getDrawable(MEDIC3.drawable));
-        medoc4.setBackground(getDrawable(MEDIC4.drawable));
-        medoc5.setBackground(getDrawable(MEDIC5.drawable));
-        medoc6.setBackground(getDrawable(MEDIC6.drawable));
-        medoc7.setBackground(getDrawable(MEDIC7.drawable));
+        for (EnumConstraintLayout ecl : EnumConstraintLayout.values()) { //ecl = enum constraint layout
+            findViewById(ecl.layout).setBackground(getDrawable(ecl.drawable));
+        }
     }
 
     /**
