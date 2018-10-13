@@ -6,9 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-import java.io.Console;
-import java.util.Arrays;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
