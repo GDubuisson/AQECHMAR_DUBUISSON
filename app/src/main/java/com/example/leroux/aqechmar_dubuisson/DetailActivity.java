@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.text.Layout;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -21,5 +22,15 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        EnumConstraintLayout enumRecup = EnumConstraintLayout.valueOf(getIntent().getStringExtra("recup"));
+
+        ConstraintLayout image = findViewById(R.id.medicDetailActivity);
+        TextView titre = findViewById(R.id.textView);
+        TextView desc = findViewById(R.id.textView2);
+        //https://developer.android.com/guide/topics/data/data-storage#pref
+        image.setBackground(getDrawable(enumRecup.drawable));
+        titre.setText(enumRecup.name);
+        desc.setText(enumRecup.description);
+
     }
 }

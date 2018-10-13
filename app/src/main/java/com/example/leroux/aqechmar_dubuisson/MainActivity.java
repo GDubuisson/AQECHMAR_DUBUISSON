@@ -1,12 +1,13 @@
 package com.example.leroux.aqechmar_dubuisson;
 
 import android.content.Intent;
-import android.support.constraint.ConstraintLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
-import static com.example.leroux.aqechmar_dubuisson.EnumConstraintLayout.*;
+import java.io.Console;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void sendMessage(View view) {
         Intent action = new Intent(this, DetailActivity.class);
+        Log.d("app", "HEYO " + view.getId());
+        Log.d("app", "HEYO2 " + R.id.cLMedic1);
+        String test ="";
+        for (EnumConstraintLayout ecl : EnumConstraintLayout.values()) {
+            if (view.getId() == ecl.layout) {
+                test = ecl.name();
+            }
+        }
+        action.putExtra("recup",test);
         startActivity(action);
     }
 
