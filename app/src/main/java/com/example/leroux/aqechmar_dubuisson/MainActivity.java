@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage(View view) {
         Intent action = new Intent(this,DetailActivity.class);
         startActivity(action);
-        // Do something in response to button
     }
 
 
