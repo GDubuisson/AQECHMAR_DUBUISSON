@@ -9,8 +9,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        style="@style/Case"
         android:layout_marginTop="120dp"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toTopOf="@+id/cLMedic4"
@@ -24,8 +23,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        style="@style/Case"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toTopOf="@+id/cLMedic1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +35,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        style="@style/Case"
         android:layout_marginTop="120dp"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toTopOf="@+id/cLMedic4"
@@ -52,8 +49,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        style="@style/Case"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,8 +60,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic5"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        style="@style/Case"
         android:layout_marginBottom="120dp"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,8 +74,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic6"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        style="@style/Case"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,8 +86,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic7"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        style="@style/Case"
         android:layout_marginBottom="120dp"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toBottomOf="parent"
