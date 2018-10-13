@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <android.support.constraint.ConstraintLayout
-            android:id="@+id/contraintLayout2"
+            android:id="@+id/medicDetailActivity"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="16dp"
@@ -34,8 +34,8 @@
             android:text="TextView"
             android:textColor="#FF0000"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/contraintLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/contraintLayout2" />
+            app:layout_constraintStart_toEndOf="@+id/medicDetailActivity"
+            app:layout_constraintTop_toBottomOf="@+id/medicDetailActivity" />
 
         <TextView
             android:id="@+id/textView2"
@@ -45,16 +45,8 @@
             android:layout_marginTop="8dp"
             android:text="TextView"
             android:textColor="#AAAAAA"
-            app:layout_constraintStart_toEndOf="@+id/contraintLayout2"
+            app:layout_constraintStart_toEndOf="@+id/medicDetailActivity"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

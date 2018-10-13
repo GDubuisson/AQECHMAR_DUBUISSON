@@ -8,12 +8,11 @@
     tools:context=".MainActivity">
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout1"
+        android:id="@+id/ConstraintLayout1"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/medicament1"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toStartOf="@+id/constraintLayout4"
