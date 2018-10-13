@@ -8,28 +8,17 @@
     tools:context=".MainActivity">
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/constraintLayout1"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@drawable/medicament2"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/medicament1"
+        android:onClick="sendMessage"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="sendMessage">
-
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/medicament6"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-        android:onClick="sendMessage">
+        app:layout_constraintTop_toTopOf="parent">
 
     </android.support.constraint.ConstraintLayout>
 
@@ -37,12 +26,28 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@drawable/medicament4"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/medicament2"
+        android:onClick="sendMessage"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="sendMessage">
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/medicament3"
+        android:onClick="sendMessage"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toTopOf="parent">
 
     </android.support.constraint.ConstraintLayout>
 
@@ -50,54 +55,52 @@
         android:id="@+id/constraintLayout4"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/medicament1"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="sendMessage">
-
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/medicament3"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        android:background="@drawable/medicament4"
+        android:onClick="sendMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="sendMessage">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout5"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="120dp"
         android:background="@drawable/medicament5"
+        android:onClick="sendMessage"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-        android:onClick="sendMessage">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
 
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/medicament6"
+        android:onClick="sendMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout7"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="120dp"
         android:background="@drawable/medicament7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
         android:onClick="sendMessage">
 
     </android.support.constraint.ConstraintLayout>
