@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/ConstraintLayout1"
+        android:id="@+id/constraintLayout1"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="120dp"
