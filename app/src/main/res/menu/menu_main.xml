@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/action_url"
-        android:icon="@drawable/medicament1"
+        android:icon="@drawable/ic_baseline_public_24px"
         android:title="url"
         app:showAsAction="always" />
 </menu>
