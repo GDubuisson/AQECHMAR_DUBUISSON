@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Uri uri = Uri.parse("http://www.google.com");
+        Uri uri = Uri.parse("http://www.univ-poitiers.fr");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
 
