@@ -12,8 +12,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static Toast bienvenu;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void afficheToast() {
         String message = getResources().getString(R.string.welcome);
-        bienvenu = Toast.makeText(this, message, Toast.LENGTH_LONG);
+        Toast bienvenu = Toast.makeText(this, message, Toast.LENGTH_LONG);
         bienvenu.show();
     }
 
