@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void afficheToast() {
-        bienvenu = Toast.makeText(this, "Bienvenu", Toast.LENGTH_LONG);
+        String message = getResources().getString(R.string.welcome);
+        bienvenu = Toast.makeText(this, message, Toast.LENGTH_LONG);
         bienvenu.show();
     }
 

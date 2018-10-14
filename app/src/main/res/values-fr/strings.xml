@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPhyExam</string>
+    <string name="welcome">Bienvenue</string>
+    <string name="medic">Médicament</string>
+</resources>
