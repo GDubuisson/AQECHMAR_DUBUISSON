@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,18 +13,19 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String SAVE = null;
+
+    public static String SAVED_KEY = "Saved_medoc";
+    public SharedPreferences defaultSharedPreferences = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init_layout();
-        //verifier ici et lancer l'activité qui va bien
-        if (PreferenceManager.getDefaultSharedPreferences(this).contains(SAVE)) {
-            Log.d("msg2","HEYO2 "+PreferenceManager.getDefaultSharedPreferences(this).getString(SAVE,""));
+        defaultSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        if (defaultSharedPreferences.contains(SAVED_KEY)) {
             Intent var = new Intent(this,DetailActivity.class);
-            var.putExtra("recup",PreferenceManager.getDefaultSharedPreferences(this).getString(SAVE,""));
+            var.putExtra("recup", defaultSharedPreferences.getString(SAVED_KEY,""));
             startActivity(var);
         }
         afficheToast();
@@ -54,21 +54,15 @@ public class MainActivity extends AppCompatActivity {
                 test = ecl.name();
             }
         }
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putString(SAVE,test);
+        SharedPreferences.Editor editor = defaultSharedPreferences.edit();
+        editor.putString(SAVED_KEY,test);
         editor.apply();
-
-        Log.d("msg","HEYO "+PreferenceManager.getDefaultSharedPreferences(this).getString(SAVE,""));
-        Log.d("msg1","HEYO1 "+test);
-
         action.putExtra("recup", test);
         startActivity(action);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
@@ -81,5 +75,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }
