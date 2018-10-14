@@ -9,8 +9,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic1"
-        style="@style/Case"
-        android:layout_marginTop="120dp"
+        style="@style/margetop120"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toTopOf="@+id/cLMedic4"
         app:layout_constraintEnd_toStartOf="@+id/cLMedic4"
@@ -35,8 +34,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic3"
-        style="@style/Case"
-        android:layout_marginTop="120dp"
+        style="@style/margetop120"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toTopOf="@+id/cLMedic4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,8 +58,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic5"
-        style="@style/Case"
-        android:layout_marginBottom="120dp"
+        style="@style/margebottom120"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cLMedic4"
@@ -86,8 +83,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cLMedic7"
-        style="@style/Case"
-        android:layout_marginBottom="120dp"
+        style="@style/margebottom120"
         android:onClick="sendMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

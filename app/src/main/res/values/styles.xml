@@ -13,4 +13,12 @@
         <item name="android:layout_width">96dp</item>
     </style>
 
+    <style name="margetop120" parent="Case">
+        <item name="android:layout_marginTop">120dp</item>
+    </style>
+
+    <style name="margebottom120" parent="Case">
+        <item name="android:layout_marginBottom">120dp</item>
+    </style>
+
 </resources>
