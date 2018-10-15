@@ -48,16 +48,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void sendMessage(View view) {
         Intent action = new Intent(this, DetailActivity.class);
-        String test = "";
+        String nomMedoc = "";
         for (EnumConstraintLayout ecl : EnumConstraintLayout.values()) {
             if (view.getId() == ecl.layout) {
-                test = ecl.name();
+                nomMedoc = ecl.name();
             }
         }
         SharedPreferences.Editor editor = defaultSharedPreferences.edit();
-        editor.putString(SAVED_KEY,test);
+        editor.putString(SAVED_KEY,nomMedoc);
         editor.apply();
-        action.putExtra("recup", test);
+        action.putExtra("recup", nomMedoc);
         startActivity(action);
     }
 
