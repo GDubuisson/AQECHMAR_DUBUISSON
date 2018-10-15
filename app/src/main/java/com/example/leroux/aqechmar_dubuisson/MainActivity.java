@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init_layout() {
-        for (EnumConstraintLayout ecl : EnumConstraintLayout.values()) { //ecl = enum constraint layout
+        for (EnumConstraintLayout ecl : EnumConstraintLayout.values()) {
             findViewById(ecl.layout).setBackground(getDrawable(ecl.drawable));
         }
     }
