@@ -1,7 +1,5 @@
 package com.example.leroux.aqechmar_dubuisson;
 
-import android.support.constraint.ConstraintLayout;
-
 enum EnumConstraintLayout {
     MEDIC1(R.drawable.medicament1,"Médicament 1","Voie cutanée",R.id.cLMedic1),
     MEDIC2(R.drawable.medicament2,"Médicament 2","Voie orale",R.id.cLMedic2),
