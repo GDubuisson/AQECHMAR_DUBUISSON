@@ -4,6 +4,9 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -29,13 +32,16 @@ public class DetailActivity extends AppCompatActivity {
 
     public void createNotification(View view) {
         final Intent emptyIntent = new Intent();
+        Bitmap icon = BitmapFactory.decodeResource(this.getResources(),enumRecup.drawable);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, emptyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         Notification notification = new NotificationCompat.Builder(this, "maNotif")
                 .setSmallIcon(enumRecup.drawable)
+                .setLargeIcon(icon)
                 .setContentTitle(enumRecup.name)
                 .setContentText(enumRecup.description)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setContentIntent(pendingIntent)
+                .setAutoCancel(true)
                 .build();
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
